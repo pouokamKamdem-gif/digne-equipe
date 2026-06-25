@@ -1,2 +1,2 @@
 # digne-equipe
-nous creons des outils de gestion d'entreprise.
+Nous creons des outils logiciels de gestion d'entreprise.
