@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIDNE-Equipe – Solutions de Gestion d'Entreprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<script>
+    document.getElementById('burger').addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.toggle('open');
+    });
+</script>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <a href="#" class="logo">
+                <span class="logo-parti1">DIGNé</span><span class="logo-parti2">QUIPE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#secteurs">Secteurs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-demo">Demander une démo</a>
+                <a href="#" class="btn-auth">Connexion</a>
+            </div>
+            <button class="burger" id="burger">&#9776;</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <span class="hero-label">Logiciels de gestion professionnels</span>
+            <h1>Gérez votre entreprise.<br><span class="accent">Sans compromis.</span></h1>
+            <p>De la TPE à la grande entreprise — ERP, PME, logistique, expédition, réunions. Tout en un écosystème pensé pour l'Afrique et au-delà.</p>
+            <div class="hero-btns">
+                <a href="#solutions" class="btn-primary">Découvrir nos solutions</a>
+                <a href="#contact" class="btn-outline">Nous contacter</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="dashboard-mockup">
+                <div class="mockup-bar">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-body">
+                    <div class="mockup-stat">
+                        <i class="fa fa-chart-line"></i>
+                        <div>
+                            <strong>+34%</strong>
+                            <small>Productivité</small>
+                        </div>
+                    </div>
+                    <div class="mockup-stat">
+                        <i class="fa fa-boxes-stacked"></i>
+                        <div>
+                            <strong>12 840</strong>
+                            <small>Articles gérés</small>
+                        </div>
+                    </div>
+                    <div class="mockup-stat">
+                        <i class="fa fa-users"></i>
+                        <div>
+                            <strong>320</strong>
+                            <small>Utilisateurs actifs</small>
+                        </div>
+                    </div>
+                    <div class="mockup-chart">
+                        <div class="bar" style="height:40%"></div>
+                        <div class="bar" style="height:65%"></div>
+                        <div class="bar" style="height:50%"></div>
+                        <div class="bar" style="height:80%"></div>
+                        <div class="bar" style="height:60%"></div>
+                        <div class="bar active" style="height:95%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SOLUTIONS -->
+<section id="solutions" class="solutions">
+    <div class="section-header">
+        <span class="section-label">Nos Produits</span>
+        <h2>Une solution pour chaque besoin</h2>
+        <p>Des logiciels conçus pour la réalité des entreprises africaines et internationales.</p>
+    </div>
+
+    <div class="solutions-grid">
+
+        <div class="solution-card featured">
+            <div class="card-icon"><i class="fa fa-desktop"></i></div>
+            <span class="card-badge">ERP</span>
+            <h3>Hardoiz Desktop</h3>
+            <p>Solution ERP complète pour grandes structures. Comptabilité, stocks, RH, production — tout intégré en version desktop robuste.</p>
+            <ul class="card-features">
+                <li><i class="fa fa-check"></i> Comptabilité générale & analytique</li>
+                <li><i class="fa fa-check"></i> Gestion des stocks & achats</li>
+                <li><i class="fa fa-check"></i> Ressources humaines & paie</li>
+                <li><i class="fa fa-check"></i> Rapports & tableaux de bord</li>
+            </ul>
+            <a href="#contact" class="card-btn">En savoir plus</a>
+        </div>
+
+        <div class="solution-card">
+            <div class="card-icon"><i class="fa fa-store"></i></div>
+            <span class="card-badge">PME</span>
+            <h3>Hardoiz</h3>
+            <p>La version agile pour PME et TPE. Gérez ventes, achats et trésorerie sans complexité inutile.</p>
+            <ul class="card-features">
+                <li><i class="fa fa-check"></i> Facturation & devis</li>
+                <li><i class="fa fa-check"></i> Gestion commerciale</li>
+                <li><i class="fa fa-check"></i> Suivi de trésorerie</li>
+            </ul>
+            <a href="#contact" class="card-btn">En savoir plus</a>
+        </div>
+
+        <div class="solution-card">
+            <div class="card-icon"><i class="fa fa-truck"></i></div>
+            <span class="card-badge">Logistique</span>
+            <h3>Gestion Logistique</h3>
+            <p>Pilotez vos flux de transport, entrepôts et livraisons en temps réel. Réduisez les délais et les pertes.</p>
+            <ul class="card-features">
+                <li><i class="fa fa-check"></i> Suivi des livraisons</li>
+                <li><i class="fa fa-check"></i> Gestion d'entrepôt</li>
+                <li><i class="fa fa-check"></i> Optimisation des tournées</li>
+            </ul>
+            <a href="#contact" class="card-btn">En savoir plus</a>
+        </div>
+
+        <div class="solution-card">
+            <div class="card-icon"><i class="fa fa-ship"></i></div>
+            <span class="card-badge">Expédition</span>
+            <h3>Agence d'Expédition</h3>
+            <p>Gérez colis, clients, tarifs et suivi d'envois pour votre agence d'expédition ou de fret.</p>
+            <ul class="card-features">
+                <li><i class="fa fa-check"></i> Suivi des colis</li>
+                <li><i class="fa fa-check"></i> Gestion des clients & tarifs</li>
+                <li><i class="fa fa-check"></i> Bordereau & manifeste</li>
+            </ul>
+            <a href="#contact" class="card-btn">En savoir plus</a>
+        </div>
+
+        <div class="solution-card">
+            <div class="card-icon"><i class="fa fa-calendar-check"></i></div>
+            <span class="card-badge">Réunions</span>
+            <h3>Gestion de Réunions</h3>
+            <p>Planifiez, suivez et archivez vos réunions. Comptes rendus automatiques, présences et décisions traçées.</p>
+            <ul class="card-features">
+                <li><i class="fa fa-check"></i> Agenda partagé</li>
+                <li><i class="fa fa-check"></i> Comptes rendus & PV</li>
+                <li><i class="fa fa-check"></i> Suivi des décisions</li>
+            </ul>
+            <a href="#contact" class="card-btn">En savoir plus</a>
+        </div>
+
+        <div class="solution-card card-cta">
+            <div class="card-icon"><i class="fa fa-puzzle-piece"></i></div>
+            <h3>Un besoin spécifique ?</h3>
+            <p>Nous développons des modules sur mesure adaptés à votre secteur et à vos processus métier.</p>
+            <a href="#contact" class="btn-primary">Parlez-nous de votre projet</a>
+        </div>
+
+    </div>
+</section>
+<!-- POURQUOI NOUS -->
+<section id="apropos" class="pourquoi">
+
+    <div class="pourquoi-stats">
+        <div class="stat-item">
+            <span class="stat-number">500<span class="stat-plus">+</span></span>
+            <span class="stat-label">Entreprises clientes</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Solutions métier</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">98<span class="stat-plus">%</span></span>
+            <span class="stat-label">Taux de satisfaction</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">10<span class="stat-plus">+</span></span>
+            <span class="stat-label">Années d'expérience</span>
+        </div>
+    </div>
+
+    <div class="pourquoi-body">
+        <div class="pourquoi-text">
+            <span class="section-label">Pourquoi DIGNéQUIPE</span>
+            <h2>Conçu pour votre réalité,<br>pas pour un marché générique.</h2>
+            <p>Nous ne vendons pas des boîtes. Nous construisons des outils avec vous, adaptés à vos processus, votre langue, votre secteur et vos contraintes terrain.</p>
+
+            <div class="arguments">
+
+                <div class="argument-item">
+                    <div class="arg-icon"><i class="fa fa-plug"></i></div>
+                    <div>
+                        <h4>Intégration rapide</h4>
+                        <p>Déploiement en quelques jours. Nos équipes vous accompagnent de l'installation à la prise en main.</p>
+                    </div>
+                </div>
+
+                <div class="argument-item">
+                    <div class="arg-icon"><i class="fa fa-shield-halved"></i></div>
+                    <div>
+                        <h4>Données sécurisées</h4>
+                        <p>Vos données restent sous votre contrôle. Hébergement local ou cloud selon votre choix.</p>
+                    </div>
+                </div>
+
+                <div class="argument-item">
+                    <div class="arg-icon"><i class="fa fa-headset"></i></div>
+                    <div>
+                        <h4>Support réactif</h4>
+                        <p>Une équipe disponible pour répondre à vos questions et résoudre vos problèmes rapidement.</p>
+                    </div>
+                </div>
+
+                <div class="argument-item">
+                    <div class="arg-icon"><i class="fa fa-sliders"></i></div>
+                    <div>
+                        <h4>Sur mesure</h4>
+                        <p>Chaque module peut être adapté à vos besoins spécifiques. Nous développons ce qu'il vous faut.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="pourquoi-visuel">
+            <div class="temoignage-card">
+                <div class="quote-icon"><i class="fa fa-quote-left"></i></div>
+                <p>"Hardoiz Desktop a transformé notre gestion. On a réduit nos erreurs de stock de 70% en trois mois."</p>
+                <div class="temoignage-auteur">
+                    <div class="auteur-avatar">DK</div>
+                    <div>
+                        <strong>Directeur Général</strong>
+                        <small>Entreprise de distribution, Kinshasa</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="temoignage-card">
+                <div class="quote-icon"><i class="fa fa-quote-left"></i></div>
+                <p>"La gestion de notre agence d'expédition n'a jamais été aussi fluide. Nos clients reçoivent leurs bordereaux instantanément."</p>
+                <div class="temoignage-auteur">
+                    <div class="auteur-avatar">AM</div>
+                    <div>
+                        <strong>Responsable Opérations</strong>
+                        <small>Agence de fret, Lubumbashi</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECTEURS -->
+<section id="secteurs" class="secteurs">
+    <div class="section-header">
+        <span class="section-label">Secteurs</span>
+        <h2>Des solutions pour chaque secteur</h2>
+        <p>DIGNéQUIPE s'adapte à votre domaine d'activité, où que vous soyez.</p>
+    </div>
+
+    <div class="secteurs-grid">
+        <div class="secteur-item">
+            <i class="fa fa-shop"></i>
+            <span>Commerce & Distribution</span>
+        </div>
+        <div class="secteur-item">
+            <i class="fa fa-industry"></i>
+            <span>Industrie & Production</span>
+        </div>
+        <div class="secteur-item">
+            <i class="fa fa-truck-fast"></i>
+            <span>Transport & Logistique</span>
+        </div>
+        <div class="secteur-item">
+            <i class="fa fa-building-columns"></i>
+            <span>Administration & ONG</span>
+        </div>
+        <div class="secteur-item">
+            <i class="fa fa-stethoscope"></i>
+            <span>Santé & Pharmacie</span>
+        </div>
+        <div class="secteur-item">
+            <i class="fa fa-graduation-cap"></i>
+            <span>Éducation & Formation</span>
+        </div>
+        <div class="secteur-item">
+            <i class="fa fa-hotel"></i>
+            <span>Hôtellerie & Restauration</span>
+        </div>
+        <div class="secteur-item">
+            <i class="fa fa-boxes-stacked"></i>
+            <span>Import / Export & Fret</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <div class="contact-inner">
+        <div class="contact-text">
+            <span class="section-label">Contact</span>
+            <h2>Parlons de votre projet</h2>
+            <p>Remplissez le formulaire, notre équipe vous répond sous 24h pour organiser une démonstration gratuite.</p>
+
+            <div class="contact-infos">
+                <div class="contact-info-item">
+                    <i class="fa fa-envelope"></i>
+                    <span>contact@dignequipe.com</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa fa-phone"></i>
+                    <span>+237 656894153</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa fa-location-dot"></i>
+                    <span>Yaounde, République Démocratique du cameroun</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" placeholder="Jean Mukendi">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="jean@entreprise.com">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="societe">Société</label>
+                <input type="text" id="societe" placeholder="Nom de votre entreprise">
+            </div>
+            <div class="form-group">
+                <label for="solution">Solution souhaitée</label>
+                <select id="solution">
+                    <option value="">-- Choisissez une solution --</option>
+                    <option>Hardoiz Desktop (ERP)</option>
+                    <option>Hardoiz (PME)</option>
+                    <option>Gestion Logistique</option>
+                    <option>Agence d'Expédition</option>
+                    <option>Gestion de Réunions</option>
+                    <option>Solution sur mesure</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Décrivez brièvement votre besoin..."></textarea>
+            </div>
+            <button class="btn-submit" type="button">
+                <i class="fa fa-paper-plane"></i> Envoyer la demande
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <a href="#" class="logo">
+                <span class="logo-parti1">DIGNé</span><span class="logo-parti2">QUIPE</span>
+            </a>
+            <p>Solutions logicielles de gestion pour entreprises africaines et internationales.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Solutions</h4>
+            <ul>
+                <li><a href="#solutions">Hardoiz Desktop</a></li>
+                <li><a href="#solutions">Hardoiz PME</a></li>
+                <li><a href="#solutions">Gestion Logistique</a></li>
+                <li><a href="#solutions">Agence d'Expédition</a></li>
+                <li><a href="#solutions">Gestion de Réunions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Entreprise</h4>
+            <ul>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#secteurs">Secteurs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Carrières</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutoriels</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Assistance technique</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2025 DIGNE-équipe. Tous droits réservés.</span>
+        <div class="footer-bottom-links">
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Conditions d'utilisation</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
